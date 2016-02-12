@@ -1,4 +1,17 @@
+body {
+  background-color: #efebe9;
+}
 
+header {
+  background-color: #D0CACA;
+  width: 100%;
+  position: relative;
+  padding: 1.5%;
+}
+
+a {
+  text-decoration: none;
+}
 
 #link:hover {
   color: #E80C7A;
@@ -16,7 +29,8 @@ footer {
 nav ul {
     list-style: none;
     padding: 0;
-    margin: 0;
+    margin-bottom: 0;
+    margin-top: 1%;
 }
 
 nav li {
@@ -33,6 +47,7 @@ nav li a {
 #content {
     border: 1px solid;
     clear: both;
+    padding: 3%;
 }
 
 #selected {
@@ -42,13 +57,14 @@ nav li a {
     top: 1px;
 }
 
-#header li {
+/*header li {
+    background-color: #1a237e;
     float: left;
     border: 1px solid;
     border-bottom-width: 0;
     margin: 0 5px 0 0;
 }
-
+*/
 h1 {
     margin: 0;
     padding: 0 0 10px 0;
@@ -61,3 +77,43 @@ h1 {
 #top border {
   border:10px;
 }
+
+footer {
+  position: relative;
+  width: 100%;
+}
+
+/*.tabs {
+  width: 100%;
+  display: inline-block;
+}
+.tab-links:after {
+  display: block;
+  clear: both;
+  content:'';
+}
+
+.tab-links li {
+  margin: 0px 5px;
+  float: left;
+  list-style: none;
+}
+
+.tab-links a {
+padding: 9px 15px;
+display: inline-block;
+border-radius: 3px 3px 0px 0px;
+transition: all linear 0.15s;
+}
+
+.tab-content {
+
+}
+
+.tab {
+  display: none;
+}
+
+.tab.active {
+  diplay: block;
+}*/
