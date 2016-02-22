@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link type="text/css" rel="stylesheet" href="../stylesheets/default.css"/>
+  <link rel="stylesheet" href="../stylesheets/blog.css" type="text/css"/>
+  <title>DBC Week 5 blog</title>
+</head>
+
+<body>
+  <header>
+  <h1>Week 5 blog</h1>
+  <h2>5.9 Technical blog</h2>
+  <h4>2/19/16</h4>
+  </header>
+  <section>
+      <ul>
+      <li><b><h3>Enumerable Method - #inject</h3></b></li><br>
+The inject method computes a single result value by applying an operation sequentially to all the elements. It takes a value to start with and a block/symbol, and runs that block/symbol for each element in the array returning a sum or collection of the object.<br>
+It's very similar to other enumerable methods like each, map and select. However the difference between inject and each is that inject doesn't operate on each element of the collection separately. And unlike map and select, it doesn't return a modified version of the array.<br>
+The ideal use of inject method is when you want to collect a single result when iterating through the list of values.
+<p>
+<b>An example of a sum method using inject:</b>
+<p>
+def sum(array)<br>
+  array.inject(0) do |sum, i|
+    sum += i
+  end
+end
+</p>
+sum([1,2,3])
+#=> 6
+</p>
+The inject method can also be used to convert and array of arrays to a hash. Here's an example:
+<p>
+array = [['A', 'a'], ['B', 'b'], ['C', 'c']]
+<br>
+hash = array.inject({}) do |memo, (key, value)|
+  memo[key] = value
+  memo
+end
+<p>
+hash
+#=> {'A' => 'a', 'B' => 'b', 'C' => 'c'}
+</p></p>
+
+  </section>
+
+
+  <main>
+
+  </main>
+
+</body>
+
+</html>
