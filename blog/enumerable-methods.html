@@ -21,35 +21,33 @@ It's very similar to other enumerable methods like each, map and select. However
 The ideal use of inject method is when you want to collect a single result when iterating through the list of values.
 <p>
 <b>An example of a sum method using inject:</b>
-<p>
+<p><main class="code">
 def sum(array)<br>
   array.inject(0) do |sum, i|
-    sum += i
-  end
+    sum += i<br>
+  end<br>
 end
 </p>
 sum([1,2,3])
 #=> 6
-</p>
+
+</p></main>
 The inject method can also be used to convert and array of arrays to a hash. Here's an example:
-<p>
+
+<p><main class="code">
 array = [['A', 'a'], ['B', 'b'], ['C', 'c']]
 <br>
-hash = array.inject({}) do |memo, (key, value)|
-  memo[key] = value
-  memo
+hash = array.inject({}) do |memo, (key, value)|<br>
+  memo[key] = value<br>
+  memo<br>
 end
 <p>
 hash
 #=> {'A' => 'a', 'B' => 'b', 'C' => 'c'}
 </p></p>
+</main>
 
-  </section>
-
-
-  <main>
-
-  </main>
+</section>
 
 </body>
 <footer><a href="http://vagabondering.github.io/">Back to main page</a></footer>
