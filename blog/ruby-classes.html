@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link type="text/css" rel="stylesheet" href="../stylesheets/default.css"/>
+  <link rel="stylesheet" href="../stylesheets/blog.css" type="text/css"/>
+  <title>DBC Week 6 blog</title>
+</head>
+<body>
+  <header>
+  <h1>Week 6 blog</h1>
+  <h2>6.9 Technical blog</h2>
+  <h4>2/25/16</h4>
+  </header>
+
+<section>
+<h2>Instance variables & methods</h2>
+An instance variable, which is defined by the @ prefix works just like a local variable, however the difference is that the instance variable is recognized outside the method and can used across different methods within the class. The instance variable is available for the methods to perform their action on the same variable. You can see in the class example below, @variable is the instance variable and is being used for the methods, initalize and instance_method.
+<p>
+An instance method is a method that's called on an instance of a class, so it can output different objects as instances from the class. Looking at the sample below, the instance_method is being called on an instance of the class, class_instance.
+</p>
+
+<main class="code">
+<p>
+  def ClassName
+<p>
+    def initialize(argument)<br>
+      @variable = argument<br>
+    end
+</p>
+<p>
+    def instance_method<br>
+      @variable<br>
+    end<br>
+</p>
+<p>
+  end
+</p>
+class_instance = ClassName.new(argument)<br>
+class_instance.instance_method
+</p>
+</main>
+
+</section>
+
+</body>
+<footer><a href="http://vagabondering.github.io/">Back to main page</a></footer>
+</html>
