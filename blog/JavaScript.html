@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link type="text/css" rel="stylesheet" href="../stylesheets/default.css"/>
+  <link rel="stylesheet" href="../stylesheets/blog.css" type="text/css"/>
+  <title></title>
+</head>
+<body>
+  <header>
+  <h1>Week 7 blog</h1>
+  <h2>7.10 Technical blog</h2>
+  <h4>3/5/16</h4>
+  </header>
+<article>
+ <ul>
+      <li><b><h3>Ruby Class VS JavaScript Function</h3></b></li><br>
+A Ruby class and JavaScript function are similar in terms of both being a container for scopes of variables and methods/functions. In JS, there are two kinds of function types, literal notation and constructor function. The difference is that a constructor function can create instances like a Ruby class, whereas literal notation is used to build a single object.<br>
+As for object instances, in order to use a class and its content in Ruby, an instance need to be created, the class itself can't be executed with the method. In JS the whole function can be executed without having to create an instance at first.
+Some of the other differences are syntax, naming convention and the setup of variables.
+<p>
+Here's an example creating a code that has two types of variables and prints them out and creating an instance of each:</p>
+<p>
+A Ruby class:
+</p>
+<p><main class="code">
+<section class="codefont">class ClassName<br>
+  <!-- <p><main class="indent1">@instance_variable = "something"</main></p> -->
+<main class="indent1">def initialize</main>
+<main class="indent2">@instance_variable = "instance variable"</main>
+<main class="indent1">end</main>
+
+</p>
+<p>
+<main class="indent1">def method_name</main>
+<main class="indent2">@instance_variable</main>
+<main class="indent2">puts @instance_variable</main>
+<main class="indent1">end</main>
+</p><p>
+<main class="indent1">def method_name2</main>
+<main class="indent2">local_variable = 'example'</main>
+<main class="indent2">puts local_variable</main>
+<main class="indent1">end</main>
+</p>
+end
+<p>
+class_instance = ClassName.new<br>
+class_instance.method_name => instance_variable<br>
+class_instance.method_name2 => local_variable
+</p>
+</p></main></section>
+
+Javascript constructor function :
+
+<main class="code">
+<section class="codefont">
+<p>var globalVariable = "global variable"</p>
+function printVariables() {
+<main class="indent1">console.log(globalVariable);</main>
+<main class="indent1">var localVariable = "local variable";</main>
+<main class="indent1">console.log(localVariable);</main>
+}
+<p>
+printVariables() => global variable local variable
+</p>
+<p>
+var objectInstance = new printVariables('an object');
+</p>
+</main>
+</section>
+You can see how each differs, Ruby using def keyword to define an object and end to enclose the code and JS using var keyword to define an object and enclosing with a curly bracket.
+The way local and non-local variables is different as well. Ruby uses the @ prefix to define an instance variable and @@ for global variable. JS only has local or global variables and they're determined what kind from where in the scope they're defined. A global variable has to be defined outside the function and the variable can called inside the function by its name. For a local variable, it has to be inside the function accompanied with var keyword, which means a new variable gets created. Without the var keyword, the function is going to think it's an existing variable and look for where it's defined.
+</article>
+
+
+</body>
+<footer><a href="http://vagabondering.github.io/">Back to main page</a></footer>
+</html>

@@ -9,6 +9,10 @@ header {
   padding: 1.5%;
 }
 
+.indent {
+  margin-left: 20px;
+}
+
 a {
   text-decoration: none;
 }
@@ -24,6 +28,9 @@ a {
 footer {
   background-color: #D5CEE8;
   text-align: center;
+  bottom: 0;
+  width: 100%;
+  position: fixed;
 }
 
 nav ul {
@@ -78,10 +85,7 @@ h1 {
   border:10px;
 }
 
-footer {
-  position: relative;
-  width: 100%;
-}
+
 
 /*.tabs {
   width: 100%;

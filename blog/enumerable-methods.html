@@ -22,30 +22,30 @@ The ideal use of inject method is when you want to collect a single result when 
 <p>
 <b>An example of a sum method using inject:</b>
 <p><main class="code">
-def sum(array)<br>
-  array.inject(0) do |sum, i|
-    sum += i<br>
-  end<br>
+<section class="codefont">def sum(array)<br>
+<main class="indent1">array.inject(0) do |sum, i|</main>
+<main class="indent2">sum += i<br></main>
+<main class="indent1">end<br></main>
 end
 </p>
 sum([1,2,3])
 #=> 6
 
-</p></main>
+</p></section></main>
 The inject method can also be used to convert and array of arrays to a hash. Here's an example:
 
 <p><main class="code">
-array = [['A', 'a'], ['B', 'b'], ['C', 'c']]
+<section class="codefont">array = [['A', 'a'], ['B', 'b'], ['C', 'c']]
 <br>
 hash = array.inject({}) do |memo, (key, value)|<br>
-  memo[key] = value<br>
-  memo<br>
+<main class="indent1">memo[key] = value<br></main>
+<main class="indent1">memo<br></main>
 end
 <p>
 hash
 #=> {'A' => 'a', 'B' => 'b', 'C' => 'c'}
 </p></p>
-</main>
+</section></main>
 
 </section>
 
