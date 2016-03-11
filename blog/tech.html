@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link type="text/css" rel="stylesheet" href="../stylesheets/default.css"/>
+  <link rel="stylesheet" href="../stylesheets/blog.css" type="text/css"/>
+  <title></title>
+</head>
+<body>
+  <header>
+  <h1>Week 8 blog</h1>
+  <h2>8.8 Technical blog</h2>
+  <h4>3/10/16</h4>
+  </header>
+<section>
+<ul>
+<li><h2>Sorting - Bubble, quick and merge sort</h2></li>
+Sorting is an algorithm that arranges the elements of a list in a particular order. Sorting typically sorts an array from highest to lowest, lowest to highest or in alphabetical order for strings. There are several sorting algorithms out there and few of them are merge, quick and bubble sort. Each has their own algorithm of sorting and is suitable for certain situations.
+
+<p>
+<h3>Bubble sort</h3>
+The bubble sort uses a comparison algorithm with relational operators. This algorithm is simple and works well for sorting smaller sets of elements. The process works by starting at the beginning of the list, comparing the first two elements and swapping them if the first is greater then the second. It then goes on to the next one, sees if the second value is larger or smaller, if it's smaller, it'll swap them, "bubbline" the higher number up to the right or left. This keeps going until the end. It then goes back to the start of the list and repeats the action and is done when no swaps occurs again.<br>
+For example in an array of [9,3,7,2,6,8], it'll compare the 9 and 3. Since the first value is larger then second, the 9 gets moved to the right (in an ascending order). It then moves on to compare 9 and 7, again the first value is larger and gets moved again. After the first run, the order becomes [3,7,2,6,8,9] so the process goes back to the beginning and compares 3 and 7. The first value is smaller so no swapping happens, it moves on to xompare 7 and 2. The numbers gets swapped because the first value being larger. It'll continue on and go over the list until it becomes [2,3,6,7,8,9]
+</p>
+
+<p><h2>Quick sort</h2>
+The quick sort, an another comparison algorithm is a fast(hence the name) way to sort and it's the method that Ruby array#sort uses. It chooses a pivot, which first tends to be the last element for comparison. It finds and moves all the values less than the pivot to the left and the greater values to the right. The values before and after the pivot aren't ordered so the process is repeated recursively, choosing a pivot and placing the smaller and larger values in right order until it's all sorted. While this might be the fastest way to sort, it's not a stable sort. A stable sort is when the relative order of two equal values are preserved, which quick sort doesn't do.<br>
+An example is [3,2,1]. It'll make number 1 as the pivot and compare the value to the left, which is larger and moving the 2 to the right, [3,1,2]. It then take the 1 as the pivot placing the 2 to the left and 3 to the right, [2,1,3]. Lastly, taking 2 as the pivot and placing the 1 to the left to create the sorted array [1,2,3].
+</p>
+
+
+<p><h2>Merge sort</h2>
+This way of sorting works better for larger arrays and is stable but since it take up a lot of memory from temporarirly creating arrays during the process, it's also slower.
+Merge sort uses a recursive algorithm that continually splits the array up in half, then splits that halved array again and keeps going until there's no arrays left to split. It then sorts the two last split elements with each other and places them in correct order. The two elements are then merged together. The merged element is merged with another array of 2 elements that were merged together, into one. The merging recursively continues until there's no arrays left to merge.<br>
+Let's take an array of [9,4,3,6,1,5,8,2]. The array gets split into [9,4,3,6] and [1,5,8,2]. Each array gets split in half into [9,4], [3,6], [1,5] and [8,2] and then goes on to split them again to individual arrays for each, [9], [4], [3, [6] etc. Since there's no more arrays to split, it'll compare the two values, 9 and 4, placing them as 4 and 9 and merging them to an array of [4,9]. It'll do the same for the next pair of 3 and 6 to [3,6]. It'll then take these two arrays and sort them to [3,4,6,9] and merging that into one array. The same thing happens to the other half of the array, which would then look like [1,2,5,8]. It then takes these two arrays, sort and merge them to [1,2,3,4,5,6,9]. If the array is an even length [1,9,10], it'll split the array into [9,2] and [1], then [9] and [2], which merges to become [2,9]. It'll then merge again to become [1,2,9].
+</p>
+
+</section>
+
+
+
+</body>
+<footer><a href="http://vagabondering.github.io/">Back to main page</a></footer>
+</html>
+
