@@ -1,9 +1,11 @@
 body {
   background-color: #efebe9;
+  color: #464239;
 }
 
 header {
-  background-color: #D0CACA;
+  background-color: #312626;
+  color: #AD9494;
   width: 100%;
   position: relative;
   padding: 1.5%;
@@ -15,18 +17,19 @@ header {
 
 a {
   text-decoration: none;
+  color: #464239;
 }
 
 #link:hover {
-  color: #E80C7A;
+  color: #DACBA7;
 }
 
 #link:link {
-  color: ##455a64;
+  color: #907272;
 }
 
 footer {
-  background-color: #D5CEE8;
+  background-color: #CAB9B9;
   text-align: center;
   bottom: 0;
   width: 100%;
