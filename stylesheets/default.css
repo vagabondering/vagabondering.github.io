@@ -121,3 +121,29 @@ transition: all linear 0.15s;
 .tab.active {
   diplay: block;
 }*/
+
+table {
+  border: 1px solid;
+  width: 90%;
+  margin-left: 5%;
+
+}
+
+#main-table-title {
+  margin: 1%;
+}
+
+.title-bar {
+  background-color: black;
+}
+
+.data-title {
+  margin-bottom: 0;
+  margin-top: 0;
+  background-color: #CCCAD0;
+  padding: 2%;
+}
+
+.data-body {
+  background-color: white;
+}
