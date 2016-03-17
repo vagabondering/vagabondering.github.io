@@ -1,14 +1,35 @@
+html {
+  background-image: url("../imgs/SFSkylineArt.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
 body {
-  background-color: #efebe9;
+  /*background-color: #efebe9;*/
   color: #464239;
+  font: garamond;
+}
+
+.transbox {
+  /*background-color: #312626;*/
+  opacity: 1;
+  padding: 1.5%;
+}
+
+.transbox h2 {
+  opacity: 1;
+  /*background-color: #312626;*/
+  /*color: #AD9494;*/
+  width: 100%;
+  position: relative;
+  font: Garamond;
 }
 
 header {
-  background-color: #312626;
-  color: #AD9494;
-  width: 100%;
-  position: relative;
-  padding: 1.5%;
+  /*background-color: #312626;*/
+  border-bottom: solid grey 2px;
+  border-top: solid grey 2px;
 }
 
 .indent {
@@ -36,6 +57,10 @@ footer {
   position: fixed;
 }
 
+nav {
+  background-color: white;
+}
+
 nav ul {
     list-style: none;
     padding: 0;
@@ -58,6 +83,7 @@ nav li a {
     border: 1px solid;
     clear: both;
     padding: 3%;
+    background-color: white;
 }
 
 #selected {
@@ -149,4 +175,20 @@ table {
 
 .data-body {
   background-color: white;
+}
+
+.tab-list li {
+  display: inline-block;
+  list-style-type: none;
+}
+
+
+
+.tab-panel.active {
+  display: block;
+}
+
+.tab-panel {
+  display: none;
+  overflow: auto;
 }
