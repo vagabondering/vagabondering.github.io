@@ -1,5 +1,6 @@
 body {
-  background-color: #efebe9;
+  /*background-color: #efebe9;*/
+  font: garamond;
 }
 h1 {
 font-size: 30px;
@@ -24,4 +25,12 @@ h2 {
 
 .codefont {
   font-family: arial;
+}
+
+section {
+  background-color: white;
+}
+
+article {
+  background-color: white;
 }
